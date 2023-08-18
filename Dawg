@@ -32,3 +32,81 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(309, 35,
 end
     end
 end)
+
+local Tab = Window:NewTab("Eggs")
+local Section = Tab:NewSection("Read Requirements First")
+Section:NewToggle("Gain 1 Event Egg", "Requires 49.1b", function(state)
+    if state then
+        _G.loop = true
+        while _G.loop == true do wait()
+        local args = {
+    [1] = "Area2",
+    [2] = 5
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("FightOver"):FireServer(unpack(args))
+
+end
+    else
+        _G.loop = false
+        while _G.loop == true do wait()
+        local args = {
+    [1] = "Area2",
+    [2] = 5
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("FightOver"):FireServer(unpack(args))
+
+end
+    end
+end)
+
+Section:NewToggle("Auto Open Event Eggs", "🥚", function(state)
+    if state then
+        _G.loop = true
+        while _G.loop == true do wait()
+        local args = {
+    [1] = 1,
+    [2] = {}
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("EggEvent1"):FireServer(unpack(args))
+
+end
+    else
+        _G.loop = false
+        while _G.loop == true do wait()
+        local args = {
+    [1] = 1,
+    [2] = {}
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("EggEvent1"):FireServer(unpack(args))
+
+end
+    end
+end)
+
+Section:NewToggle("Auto Craft All", "Name", function(state)
+    if state then
+        _G.loop = true
+        while _G.loop == true do wait()
+        local args = {
+    [1] = "CraftAll"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("PetSystem"):WaitForChild("PetInventoryHandler"):FireServer(unpack(args))
+
+end
+    else
+        _G.loop = false
+        while _G.loop == true do wait()
+        local args = {
+    [1] = "CraftAll"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("PetSystem"):WaitForChild("PetInventoryHandler"):FireServer(unpack(args))
+
+end
+    end
+end)
