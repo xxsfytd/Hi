@@ -1,4 +1,4 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xxsfytd/Aaaaa/main/Aaaaa"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Ninja Simulator", "DarkTheme")
 
 local Tab = Window:NewTab("Auto Grinding")
