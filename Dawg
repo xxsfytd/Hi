@@ -422,10 +422,6 @@ end
     end
 end)
 
-
-
-
-local Tab = Window:NewTab("Grinding")
 local Section = Tab:NewSection("Super OP Grinding")
 Section:NewToggle("Auto Fist", "ITS SO BROKEN DONT LET IT SHOW TO THE OWNER OR HE MIGHT PATCH 😭😭", function(state)
     if state then
