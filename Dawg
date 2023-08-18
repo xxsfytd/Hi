@@ -423,7 +423,7 @@ end
 end)
 
 local Section = Tab:NewSection("Super OP Grinding")
-Section:NewToggle("Auto Fist", "ITS SO BROKEN DONT LET IT SHOW TO THE OWNER OR HE MIGHT PATCH 😭😭", function(state)
+Section:NewToggle("Auto Fist", "Op grind", function(state)
     if state then
         _G.loop = true
         while _G.loop == true do wait()
