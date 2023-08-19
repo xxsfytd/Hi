@@ -110,3 +110,423 @@ game:GetService("ReplicatedStorage"):WaitForChild("PetSystem"):WaitForChild("Pet
 end
     end
 end)
+
+local Tab = Window:NewTab("Teleport")
+local Section = Tab:NewSection("Teleport")
+Section:NewButton("Normal Dojo", "PLATE", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-155, 5, 14)
+end)
+
+Section:NewButton("Frozen Dojo", "PLATE", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-155, 5, 272)
+end)
+
+Section:NewButton("Molten Dojo", "PLATE", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-155, 5, 578)
+end)
+
+Section:NewButton("Underwater Dojo", "PLATE", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-144, 23, 834)
+end)
+
+Section:NewButton("Colleseum Dojo", "PLATE", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(247, 28, 1174)
+end)
+
+local Tab = Window:NewTab("Auto Win") 
+local Section = Tab:NewSection("Normal Dojo")
+Section:NewToggle("Trainee", "PLATE", function(state)
+    if state then
+        _G.loop = true
+        while _G.loop == true do wait()
+        local args = {
+    [1] = "Area1",
+    [2] = 1
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("FightOver"):FireServer(unpack(args))
+
+end
+    else
+        _G.loop = false
+        while _G.loop == true do wait()
+        local args = {
+    [1] = "Area1",
+    [2] = 1
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("FightOver"):FireServer(unpack(args))
+
+end
+    end
+end)
+
+Section:NewToggle("Student", "PLATE", function(state)
+    if state then
+        _G.loop = true
+        while _G.loop == true do wait()
+        local args = {
+    [1] = "Area1",
+    [2] = 2
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("FightOver"):FireServer(unpack(args))
+
+end
+    else
+        _G.loop = false
+        while _G.loop == true do wait()
+        local args = {
+    [1] = "Area1",
+    [2] = 2
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("FightOver"):FireServer(unpack(args))
+
+end
+    end
+end)
+
+Section:NewToggle("Experienced", "PLATE", function(state)
+    if state then
+        _G.loop = true
+        while _G.loop == true do wait()
+        local args = {
+    [1] = "Area1",
+    [2] = 3
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("FightOver"):FireServer(unpack(args))
+
+end
+    else
+        _G.loop = false
+        while _G.loop == true do wait()
+        local args = {
+    [1] = "Area1",
+    [2] = 3
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("FightOver"):FireServer(unpack(args))
+
+end
+    end
+end)
+
+Section:NewToggle("Noob Ninja", "PLATE", function(state)
+    if state then
+        _G.loop = true
+        while _G.loop == true do wait()
+        local args = {
+    [1] = "Area1",
+    [2] = 4
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("FightOver"):FireServer(unpack(args))
+
+end
+    else
+        _G.loop = false
+        while _G.loop == true do wait()
+        local args = {
+    [1] = "Area1",
+    [2] = 4
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("FightOver"):FireServer(unpack(args))
+
+end
+    end
+end)
+
+Section:NewToggle("Sensei", "PLATE", function(state)
+    if state then
+        _G.loop = true
+        while _G.loop == true do wait()
+        local args = {
+    [1] = "Area1",
+    [2] = 5
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("FightOver"):FireServer(unpack(args))
+
+end
+    else
+        _G.loop = false
+        while _G.loop == true do wait()
+        local args = {
+    [1] = "Area1",
+    [2] = 5
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("FightOver"):FireServer(unpack(args))
+
+end
+    end
+end)
+
+local Section = Tab:NewSection("Frozen Dojo")
+Section:NewToggle("Ice Warrior", "PLATE", function(state)
+    if state then
+        _G.loop = true
+        while _G.loop == true do wait()
+        local args = {
+    [1] = "Area2",
+    [2] = 1
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("FightOver"):FireServer(unpack(args))
+
+end
+    else
+        _G.loop = false
+        while _G.loop == true do wait()
+        local args = {
+    [1] = "Area2",
+    [2] = 1
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("FightOver"):FireServer(unpack(args))
+
+end
+    end
+end)
+
+Section:NewToggle("Ice Sensei", "PLATE", function(state)
+    if state then
+        _G.loop = true
+        while _G.loop == true do wait()
+        local args = {
+    [1] = "Area2",
+    [2] = 2
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("FightOver"):FireServer(unpack(args))
+
+end
+    else
+        _G.loop = false
+        while _G.loop == true do wait()
+        local args = {
+    [1] = "Area2",
+    [2] = 2
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("FightOver"):FireServer(unpack(args))
+
+end
+    end
+end)
+
+Section:NewToggle("Assasin", "PLATE", function(state)
+    if state then
+        _G.loop = true
+        while _G.loop == true do wait()
+        local args = {
+    [1] = "Area2",
+    [2] = 3
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("FightOver"):FireServer(unpack(args))
+
+end
+    else
+        _G.loop = false
+        while _G.loop == true do wait()
+        local args = {
+    [1] = "Area2",
+    [2] = 3
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("FightOver"):FireServer(unpack(args))
+
+end
+    end
+end)
+
+Section:NewToggle("Arctic Menace", "PLATE", function(state)
+    if state then
+        _G.loop = true
+        while _G.loop == true do wait()
+        local args = {
+    [1] = "Area2",
+    [2] = 4
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("FightOver"):FireServer(unpack(args))
+
+end
+    else
+        _G.loop = false
+        while _G.loop == true do wait()
+        local args = {
+    [1] = "Area2",
+    [2] = 4
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("FightOver"):FireServer(unpack(args))
+
+end
+    end
+end)
+
+Section:NewToggle("Arctic Master", "PLATE", function(state)
+    if state then
+        _G.loop = true
+        while _G.loop == true do wait()
+        local args = {
+    [1] = "Area2",
+    [2] = 5
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("FightOver"):FireServer(unpack(args))
+
+end
+    else
+        _G.loop = false
+        while _G.loop == true do wait()
+        local args = {
+    [1] = "Area2",
+    [2] = 5
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("FightOver"):FireServer(unpack(args))
+
+end
+    end
+end)
+
+local Section = Tab:NewSection("Molten Dojo")
+Section:NewToggle("Fire Ninja", "PLATE", function(state)
+    if state then
+        _G.loop = true
+        while _G.loop == true do wait()
+        local args = {
+    [1] = "Area3",
+    [2] = 1
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("FightOver"):FireServer(unpack(args))
+
+end
+    else
+        _G.loop = false
+        while _G.loop == true do wait()
+        local args = {
+    [1] = "Area3",
+    [2] = 1
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("FightOver"):FireServer(unpack(args))
+
+end
+    end
+end)
+
+Section:NewToggle("Dark Ninja", "PLATE", function(state)
+    if state then
+        _G.loop = true
+        while _G.loop == true do wait()
+        local args = {
+    [1] = "Area3",
+    [2] = 2
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("FightOver"):FireServer(unpack(args))
+
+end
+    else
+        _G.loop = false
+        while _G.loop == true do wait()
+        local args = {
+    [1] = "Area3",
+    [2] = 2
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("FightOver"):FireServer(unpack(args))
+
+end
+    end
+end)
+
+Section:NewToggle("Fire Sensei", "PLATE", function(state)
+    if state then
+        _G.loop = true
+        while _G.loop == true do wait()
+        local args = {
+    [1] = "Area3",
+    [2] = 3
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("FightOver"):FireServer(unpack(args))
+
+end
+    else
+        _G.loop = false
+        while _G.loop == true do wait()
+        local args = {
+    [1] = "Area3",
+    [2] = 3
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("FightOver"):FireServer(unpack(args))
+
+end
+    end
+end)
+
+Section:NewToggle("Infernal Master", "PLATE", function(state)
+    if state then
+        _G.loop = true
+        while _G.loop == true do wait()
+        local args = {
+    [1] = "Area3",
+    [2] = 4
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("FightOver"):FireServer(unpack(args))
+
+end
+    else
+        _G.loop = false
+        while _G.loop == true do wait()
+        local args = {
+    [1] = "Area3",
+    [2] = 4
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("FightOver"):FireServer(unpack(args))
+
+end
+    end
+end)
+
+Section:NewToggle("Mortus", "PLATE", function(state)
+    if state then
+        _G.loop = true
+        while _G.loop == true do wait()
+        local args = {
+    [1] = "Area3",
+    [2] = 5
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("FightOver"):FireServer(unpack(args))
+
+end
+    else
+        _G.loop = false
+        while _G.loop == true do wait()
+        local args = {
+    [1] = "Area3",
+    [2] = 5
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("FightOver"):FireServer(unpack(args))
+
+end
+    end
+end)
+
+local Section = Tab:NewSection("Underwater Dojo")
+
+local Section = Tab:NewSection("Colleseum Dojo")
