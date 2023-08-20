@@ -67,7 +67,12 @@ Section:NewToggle("Auto Open Event Eggs", "🥚", function(state)
         while _G.loop == true do wait()
         local args = {
     [1] = 1,
-    [2] = {}
+    [2] = {
+        ["HolyDragon"] = true,
+        ["RoyalDragon"] = true,
+        ["InfernoDragon"] = true,
+        ["FireDragon"] = true
+    }
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("EggEvent1"):FireServer(unpack(args))
@@ -78,7 +83,12 @@ end
         while _G.loop == true do wait()
         local args = {
     [1] = 1,
-    [2] = {}
+    [2] = {
+        ["HolyDragon"] = true,
+        ["RoyalDragon"] = true,
+        ["InfernoDragon"] = true,
+        ["FireDragon"] = true
+    }
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("EggEvent1"):FireServer(unpack(args))
