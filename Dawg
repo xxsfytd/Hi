@@ -34,7 +34,7 @@ end
 end)
 
 local Tab = Window:NewTab("Eggs")
-local Section = Tab:NewSection("Read Requirements First")
+local Section = Tab:NewSection("Auto Event Egg")
 Section:NewToggle("Gain 1 Event Egg", "Requires 49.1b", function(state)
     if state then
         _G.loop = true
@@ -106,6 +106,43 @@ end
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("PetSystem"):WaitForChild("PetInventoryHandler"):FireServer(unpack(args))
+
+end
+    end
+end)
+
+local Section = Tab:NewSection("Auto Hatch W.I.P")
+Section:NewToggle("Phoenix Egg", "15B Wins", function(state)
+    if state then
+        _G.loop = true
+        while _G.loop == true do wait()
+        local args = {
+    [1] = "Phoenix Egg",
+    [2] = 1,
+    [3] = {
+        ["Avis"] = true,
+        ["InfernoElemental"] = true
+    },
+    [4] = false
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("PetSystem"):WaitForChild("PurchaseEgg"):FireServer(unpack(args))
+
+end
+    else
+        _G.loop = false
+        while _G.loop == true do wait()
+        local args = {
+    [1] = "Phoenix Egg",
+    [2] = 1,
+    [3] = {
+        ["Avis"] = true,
+        ["InfernoElemental"] = true
+    },
+    [4] = false
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("PetSystem"):WaitForChild("PurchaseEgg"):FireServer(unpack(args))
 
 end
     end
